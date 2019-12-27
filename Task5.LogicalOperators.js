@@ -3,25 +3,31 @@ console.clear();
 let readline;
 let age;
 readline = require('readline-sync');
+//let Iconv  = require('iconv').Iconv;
+//var iconv = new Iconv('UTF-8', 'ISO-8859-1');
 
 
 console.log(`Task 1`);
-age = Number(readline.question("Enter any integer:"));
+age = readline.question("Enter any integer:");
+//var message = iconv.encode(iconv.decode(age, "cp1251"), "utf8").toString();
+//console.log(message);
+if (age==='') {
+    console.log('Отменено');
+    return 5;
+}
+age = Number(age);
 if (age >= 14 && age <= 90) 
 {
   console.log(`14 <= Your Integer >= 90`);  
 } 
 else 
 {
+    
     (age<14)&&console.log(`Your Integer < 14`);
-    (age>90)&&console.log(`Your Integer > 90`);  
+    (age>90)&&console.log(`Your Integer > 90`); 
+    (isNaN(age))&&console.log(`Ты ввел буквы`); 
 }
-/*
-age=Number("asfasf");
-console.log(`${age}, ${(age>14||age==14)&&(age<90||age==90)} `); 
-console.log(`${age<14}`); 
-console.log(`${age>90}`)
-*/
+
 
 
 console.log(`\nTask 2.1`);
