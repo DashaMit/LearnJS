@@ -10,7 +10,7 @@ do {
 console.log('Task 1. Цикл for. Выводим число(изначально 15) пока оно не станет меньше 10');
 for(a=15; a>=10; console.log(a--));
 
-console.log(`Task 2. При помощи цикла for выведите чётные числа от 2 до 10`);
+console.log(`\nTask 2. При помощи цикла for выведите чётные числа от 2 до 10`);
 for (let i = 2; i < 11; i++) {
 
     if (i % 2 == 0) {
@@ -19,14 +19,14 @@ for (let i = 2; i < 11; i++) {
   
   }
 
-  console.log(`Task 3. Перепишите код, заменив цикл for на while, без изменения поведения цикла`);
+  console.log(`\nTask 3. Перепишите код, заменив цикл for на while, без изменения поведения цикла`);
   let d = 0;
   while ( d< 3){
        console.log( `number ${d}!` );
        d++;
   }
  
- console.log(`Task 4. Повторять цикл, пока ввод неверен`);
+ console.log(`\nTask 4. Повторять цикл, пока ввод неверен`);
  let readline;
  readline = require('readline-sync');
  let num;
@@ -37,7 +37,7 @@ for (let i = 2; i < 11; i++) {
  }
  while (num<=100 && num);
 
-console.log(`Task 5. Вывести простые числа jn 2 до 17`);
+console.log(`\nTask 5. Вывести простые числа от 2 до 17`);
 let num1 = 17;
 lable:
 for (let i = 2; i<=num1; i++) {
