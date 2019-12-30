@@ -14,7 +14,7 @@ arr = strArr.split(',');
 console.log(`Строка в массив: ${arr}`);
 
 console.log(`\nTask 3. Добавить к каждому элементу массива слова hello`);
-arr.forEach((item, index) =>{
+arr.forEach((item, index) => {
     let newItem = item + 'hello';
     arr.splice(index, 1, newItem);
 })
@@ -23,7 +23,7 @@ console.log(arr);
 console.log(`\nTask 4. Преобразовать числовой массив в boolean`);
 let arrNumToBool = [1, 2, 0, 4,];
 console.log(`Числовой массив: ${arrNumToBool}`);
-arrNumToBool.forEach((item, index) =>{
+arrNumToBool.forEach((item, index) => {
     let newItem = !!item;
     arrNumToBool.splice(index, 1, newItem);
 })
