@@ -38,7 +38,7 @@ function checkAge(age) {
 }
 //Функция с оператром ?
 function checkAge2(age) {
-  return (age > 18) || 'Родители разрешили?';
+  return (age > 18) ? true : 'Родители разрешили?';
 }
 
 //Функция с оператром ||
